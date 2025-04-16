@@ -1,49 +1,74 @@
-Dear Talha 
-I have used Entity Framework core In Memory Database because i am on linux and sql server installation might takes some time, Where as EF Core is same as Sql Server RDBMS
-This is the project architecture structure
-![image](https://github.com/user-attachments/assets/85e5151e-1566-4a8c-920d-a1cfb709f07f)
+Dear Talha,
 
-Now when you move to the **WmsIntegration.API** directory you needs to execute these three commands
-``` 
-    dotnet clean 
-    dotnet build
-    dotnet run
-```
-Here you can check the seeding were done 
+I have used Entity Framework Core In-Memory Database for this project since I am currently working on Linux, and setting up SQL Server might take some time. EF Core’s functionality closely resembles SQL Server’s RDBMS, so it serves well for development and testing purposes.
+
+Project Architecture
+
+
+Running the API
+Navigate to the WmsIntegration.API directory and execute the following commands:
+
+bash
+Copy
+Edit
+dotnet clean
+dotnet build
+dotnet run
+Once the application is running, you’ll see that the database seeding has been successfully performed:
+
 ![image](https://github.com/user-attachments/assets/db5950ae-bbb7-4310-8c73-96533edf8d84)
 
-Here is Swagger documentation for the API's Swagger URL :- http://localhost:5077/swagger/index.html
+You can verify the seeded data using the Swagger API Explorer:
+
+Swagger URL: http://localhost:5077/swagger/index.html
 ![image](https://github.com/user-attachments/assets/8de1e263-18e8-4e1a-bdf1-6d7e6e8e96f4)
 
-We can see what data hase been seeds using the Swagger API Explorer all of them which are Rest API to fetch the records from the Databases
-![image](https://github.com/user-attachments/assets/1fd8650d-c886-4156-af44-b38451640be5)
 
-Now we have a scheduler which can we make through custom coding using Polly and while loop but in this case i prefer HangFire which i have recently used and it is also working with EF Core In Memory Database
+This interface exposes all the available REST APIs that retrieve records from the in-memory database:
 
-Now we need to move to the folder directory **WmsIntegration.Scheduler** and we need to run these commands again
-```
-   dotnet clean
-  dotnet build
-  dotnet run
-```
 
-And then we can go to this URL localhost:5000 to check if the server is still up
-And when we go to this url localhost:5000/hangfire
+
+Scheduler (Hangfire)
+We are using Hangfire for scheduling background jobs. While it is possible to implement a scheduler using a while loop and Polly for retry policies, I opted for Hangfire because of its robustness and recent integration in another project. It works well even with EF Core’s In-Memory Database.
+
+To run the scheduler:
+
+Navigate to the WmsIntegration.Scheduler directory.
+
+Execute the following commands:
+
+bash
+Copy
+Edit
+dotnet clean
+dotnet build
+dotnet run
+Visit http://localhost:5000 to ensure the server is running, and then navigate to http://localhost:5000/hangfire to access the Hangfire dashboard:
+
+![image](https://github.com/user-attachments/assets/6782dab4-4739-4266-8e3c-af66e0d964e1)
 
 ![image](https://github.com/user-attachments/assets/1155b70f-6b8d-42d8-9c0e-29b1d23b54eb)
 
-The service will be there it will run after everyone hour if we need to change the cron expression we can do this from here means it will run after every one hour
+
+The scheduled job is configured to run every hour. If needed, the CRON expression can be adjusted directly from the dashboard or made configurable through a separate database table:
+
 
 ![image](https://github.com/user-attachments/assets/8ee0a991-81b4-431c-8bfc-4a7b9ce5150a)
 
-We can change this cron expression through code or through Database which make it configurable in a separate table
-Now we have Test cases to check here is the directory for the test cases **WmsIntegration.Tests**
-move to this directory and run command     ``` dotnet test  ``` to make n Unit test cases and mock http executable in the bellow screenshot it was successfull because the api server is up what if i make api server down than it will gaves the error here is the screenshot attached
+Running Unit Tests
+To execute the test cases, navigate to the WmsIntegration.Tests directory and run:
+
+bash
+Copy
+Edit
+dotnet test
+These are NUnit test cases that mock HTTP requests. Here's a screenshot showing a successful test run when the API server is up and running:
 ![image](https://github.com/user-attachments/assets/11825c3c-08a8-4979-8085-a662a3818ca8)
+
+
+However, if the API server is down, the tests will fail as expected:
+
 ![image](https://github.com/user-attachments/assets/4e55fb38-232a-4dd5-a754-7b45b801a382)
+Let me know if you have any questions or need further assistance.
 
-
-
-
-
-
+Best regards,
