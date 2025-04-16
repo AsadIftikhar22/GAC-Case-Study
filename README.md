@@ -55,6 +55,7 @@ The scheduled job is configured to run every hour. If needed, the CRON expressio
 
 ![image](https://github.com/user-attachments/assets/8ee0a991-81b4-431c-8bfc-4a7b9ce5150a)
 
+It also has Retry policy which will check three times when the api is down to make the hit to the API with custom **Polly Policy**
 Running Unit Tests
 To execute the test cases, navigate to the WmsIntegration.Tests directory and run:
 
