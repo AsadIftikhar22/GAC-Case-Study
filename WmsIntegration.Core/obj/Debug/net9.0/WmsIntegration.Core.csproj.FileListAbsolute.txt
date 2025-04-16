@@ -1,0 +1,11 @@
+/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/bin/Debug/net9.0/WmsIntegration.Core.deps.json
+/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/bin/Debug/net9.0/WmsIntegration.Core.dll
+/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/bin/Debug/net9.0/WmsIntegration.Core.pdb
+/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/obj/Debug/net9.0/WmsIntegration.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/obj/Debug/net9.0/WmsIntegration.Core.AssemblyInfoInputs.cache
+/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/obj/Debug/net9.0/WmsIntegration.Core.AssemblyInfo.cs
+/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/obj/Debug/net9.0/WmsIntegration.Core.csproj.CoreCompileInputs.cache
+/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/obj/Debug/net9.0/WmsIntegration.Core.dll
+/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/obj/Debug/net9.0/refint/WmsIntegration.Core.dll
+/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/obj/Debug/net9.0/WmsIntegration.Core.pdb
+/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/obj/Debug/net9.0/ref/WmsIntegration.Core.dll

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "9zWbO8GvAHO4qaSuNN1lDqjpExezCRuHjRToSLEXVq8=",
+  "Source": "WmsIntegration.Scheduler",
+  "BasePath": "_content/WmsIntegration.Scheduler",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

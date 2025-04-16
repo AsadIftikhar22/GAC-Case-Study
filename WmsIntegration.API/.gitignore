@@ -1,0 +1,24 @@
+# Ignore DLL files
+*.dll
+
+# Ignore OBJ files
+*.obj
+
+# Ignore bin and obj folders
+/bin/
+/obj/
+
+# Ignore Visual Studio specific files
+.vs/
+.vscode/
+.idea/
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Ignore build output directories
+/bin/
+/obj/
