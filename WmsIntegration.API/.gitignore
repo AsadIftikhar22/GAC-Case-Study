@@ -1,24 +1,22 @@
-# Ignore DLL files
-*.dll
+# Ignore bin and obj folders for all projects under net9.0
+**/bin/Debug/net9.0/
+**/obj/Debug/net9.0/
 
-# Ignore OBJ files
-*.obj
+# Ignore all files under net9.0 for all projects
+**/bin/Debug/net9.0/*
+**/obj/Debug/net9.0/*
 
-# Ignore bin and obj folders
-/bin/
-/obj/
+# You can also add specific files to ignore (for clarity)
+**/bin/Debug/net9.0/*.dll
+**/bin/Debug/net9.0/*.pdb
+**/obj/Debug/net9.0/*.dll
+**/obj/Debug/net9.0/*.pdb
+**/obj/Debug/net9.0/*.cache
+**/obj/Debug/net9.0/*.g.cs
 
-# Ignore Visual Studio specific files
-.vs/
-.vscode/
-.idea/
-
-# Ignore user-specific files
-*.user
-*.userosscache
-*.suo
-*.userprefs
-
-# Ignore build output directories
-/bin/
-/obj/
+# Ignore other generated files related to build
+**/obj/Debug/net9.0/*.csproj.*
+**/obj/Debug/net9.0/WmsIntegration.Tests.AssemblyInfoInputs.cache
+**/obj/Debug/net9.0/WmsIntegration.Scheduler.csproj.AssemblyReference.cache
+**/obj/Debug/net9.0/WmsIntegration.Scheduler.csproj.FileListAbsolute.txt
+**/obj/Debug/net9.0/project.nuget.cache

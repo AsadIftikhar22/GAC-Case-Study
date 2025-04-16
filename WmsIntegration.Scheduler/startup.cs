@@ -45,6 +45,6 @@ app.UseHangfireDashboard();
 RecurringJob.AddOrUpdate<SchedulerService>(
     "xml-file-processor",
     service => service.RunAsync(),
-    Cron.Minutely); // Every 1 minute, or change to your needs
+    "0 * * * *"); // Every 1 Hours, or change to your needs
 //System.Console.WriteLine($"AppSettings.ERPURL: {AppSettings.GetSetting("ERPURL")}");
 app.Run();

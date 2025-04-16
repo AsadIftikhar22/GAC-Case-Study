@@ -1,0 +1,85 @@
+<Root>
+  <Customers>
+    <Customer>
+      <Name>Alpha Inc</Name>
+      <CustomerCategory>Business</CustomerCategory>
+    </Customer>
+    <Customer>
+      <Name>Jane Smith</Name>
+      <CustomerCategory>Individual</CustomerCategory>
+    </Customer>
+    <Customer>
+      <Name>Innova Solutions</Name>
+      <CustomerCategory>Business</CustomerCategory>
+    </Customer>
+  </Customers>
+
+  <Products>
+    <Product>
+      <ProductCode>PRD-A1</ProductCode>
+      <Title>Alpha Widget</Title>
+      <Description>Multi-purpose gadget</Description>
+    </Product>
+    <Product>
+      <ProductCode>PRD-B2</ProductCode>
+      <Title>Beta Tool</Title>
+      <Description>Heavy-duty equipment</Description>
+    </Product>
+  </Products>
+
+  <PurchaseOrders>
+    <PurchaseOrder>
+      <OrderId>PO-1001</OrderId>
+      <ProcessingDate>2025-04-16T09:00:00Z</ProcessingDate>
+      <CustomerId>1</CustomerId>
+      <Items>
+        <PurchaseOrderItem>
+          <ProductId>2</ProductId>
+          <PurchaseOrderId>301</PurchaseOrderId>
+          <Quantity>15</Quantity>
+        </PurchaseOrderItem>
+      </Items>
+    </PurchaseOrder>
+    <PurchaseOrder>
+       <OrderId>PO-1002</OrderId> 
+      <ProcessingDate>2025-04-15T13:30:00Z</ProcessingDate>
+      <CustomerId>2</CustomerId>
+      <Items>
+        <PurchaseOrderItem>
+          <ProductId>2</ProductId>
+          <PurchaseOrderId>302</PurchaseOrderId>
+          <Quantity>8</Quantity>
+        </PurchaseOrderItem>
+      </Items>
+    </PurchaseOrder>
+  </PurchaseOrders>
+
+  <SalesOrders>
+    <SalesOrder>
+      <OrderId>SO-2001</OrderId>
+      <ProcessingDate>2025-04-16T10:00:00Z</ProcessingDate>
+      <CustomerId>1</CustomerId>
+      <ShipmentAddress>Abu Dhabi</ShipmentAddress>
+      <Items>
+        <SalesOrderItem>
+          <ProductId>2</ProductId>
+          <SalesOrderId>1</SalesOrderId>
+          <Quantity>4</Quantity>
+        </SalesOrderItem>
+      </Items>
+    </SalesOrder>
+    <SalesOrder>
+      <OrderId>SO-2002</OrderId>
+      <ProcessingDate>2025-04-15T11:15:00Z</ProcessingDate>
+      <CustomerId>2</CustomerId>
+      <ShipmentAddress>Jabel Ali Dubai</ShipmentAddress>
+      <Items>
+        <SalesOrderItem>
+          <ProductId>1</ProductId>
+          <SalesOrderId>1</SalesOrderId>
+          <Quantity>9</Quantity>
+        </SalesOrderItem>
+      </Items>
+    </SalesOrder>
+  </SalesOrders>
+</Root>

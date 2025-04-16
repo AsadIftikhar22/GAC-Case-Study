@@ -4,14 +4,14 @@
     "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Tests/WmsIntegration.Tests.csproj": {}
   },
   "projects": {
-    "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Tests/WmsIntegration.Tests.csproj": {
+    "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/WmsIntegration.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Tests/WmsIntegration.Tests.csproj",
-        "projectName": "WmsIntegration.Tests",
-        "projectPath": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Tests/WmsIntegration.Tests.csproj",
+        "projectUniqueName": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/WmsIntegration.Core.csproj",
+        "projectName": "WmsIntegration.Core",
+        "projectPath": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/WmsIntegration.Core.csproj",
         "packagesPath": "/home/hamza/.nuget/packages/",
-        "outputPath": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Tests/obj/",
+        "outputPath": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/hamza/.nuget/NuGet/NuGet.Config"
@@ -43,22 +43,189 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/hamza/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Scheduler/WmsIntegration.Scheduler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Scheduler/WmsIntegration.Scheduler.csproj",
+        "projectName": "WmsIntegration.Scheduler",
+        "projectPath": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Scheduler/WmsIntegration.Scheduler.csproj",
+        "packagesPath": "/home/hamza/.nuget/packages/",
+        "outputPath": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Scheduler/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/hamza/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/WmsIntegration.Core.csproj": {
+                "projectPath": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Core/WmsIntegration.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.18, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.18, )"
+            },
+            "Hangfire.MemoryStorage": {
+              "target": "Package",
+              "version": "[1.8.1.1, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "Quartz.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/hamza/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Tests/WmsIntegration.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Tests/WmsIntegration.Tests.csproj",
+        "projectName": "WmsIntegration.Tests",
+        "projectPath": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Tests/WmsIntegration.Tests.csproj",
+        "packagesPath": "/home/hamza/.nuget/packages/",
+        "outputPath": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/hamza/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Scheduler/WmsIntegration.Scheduler.csproj": {
+                "projectPath": "/home/hamza/Desktop/GAC Case Study/WmsIntegration.Scheduler/WmsIntegration.Scheduler.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.12.0, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "RichardSzalay.MockHttp": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[6.0.2, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.9.2, )"
-            },
-            "xunit.runner.visualstudio": {
-              "target": "Package",
-              "version": "[2.8.2, )"
             }
           },
           "imports": [
